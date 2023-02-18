@@ -1,5 +1,6 @@
 .App {
   text-align: center;
+  background: linear-gradient(0deg, rgba(68,130,151,1) 0%, rgba(40,44,52,1) 88%);
 }
 
 .App-header {
@@ -21,7 +22,8 @@
 }
 
 .App-intro {
-  font-size: large;
+  font-size: 14px;
+  color: white;
 }
 
 /* CSS for Movie Component */
@@ -69,24 +71,43 @@
   margin-top: 10px;
 }
 
+.search_container {
+  display: flex;
+  position: relative;
+}
+
 input[type="submit"] {
   padding: 5px;
-  background-color: transparent;
-  color: black;
-  border: 1px solid black;
+  background-color: #448297;
+  color: white;
+  border: 1px solid #448297;
   width: 80px;
   margin-left: 5px;
   cursor: pointer;
+  position: absolute;
+  top: 1.1px;
+  left: 206px;
+  border-radius: 10px;
+  height: 27px;
+  transition: all 0.3s ease-in;
 }
 
 input[type="submit"]:hover {
   background-color: #282c34;
-  color: antiquewhite;
+  border: 1px solid #282c34;
+  color: #448297;
+  transition: all 0.3s ease-in;
 }
 
-.search > input[type="text"] {
+input[type="text"] {
   width: 40%;
-  min-width: 170px;
+  min-width: 290px;
+  height: 28px;
+  border-radius: 10px;
+}
+
+input[type="text"]:focus {
+  outline: none;
 }
 
 @media screen and (min-width: 694px) and (max-width: 915px) {
