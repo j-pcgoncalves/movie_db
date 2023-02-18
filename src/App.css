@@ -10,7 +10,7 @@
   align-items: center;
   justify-content: center;
   font-size: calc(10px + 2vmin);
-  color: white;
+  color: #448297;
   padding: 20px;
   cursor: pointer;
 }
@@ -52,7 +52,7 @@
 
 .movie {
   padding: 5px 25px 10px 25px;
-  max-width: 25%;
+  max-width: 17%;
 }
 
 .errorMessage {
