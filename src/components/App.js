@@ -80,6 +80,8 @@ const App = () => {
       <Header text="MovieDB" />
       <Search search={search} />
       <p className="App-intro">Search for your favourite movies!</p>
+      <hr className="hr_1"></hr>
+      <hr className="hr_2"></hr>
       <div className="movies">
         {loading && !errorMessage ? (
           <span>Loading...</span>
